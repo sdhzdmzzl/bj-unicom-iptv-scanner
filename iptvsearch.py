@@ -57,6 +57,7 @@ def main():
                     print(protocol+'://'+ip+':'+str(port1), file=file)
                     print('', file=file)
                     found_channels +=1
+                    time.sleep(1)
                 update_progress(counter/len(ip_list), 'Scan '+ip + ':' + str(port1), '(Found '+str(found_channels)+' channels)    ')
     print('Found '+str(found_channels)+' channels')
 
